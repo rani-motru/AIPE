@@ -1,0 +1,14 @@
+streamlit 
+langchain 
+langchain-core 
+langchain-community 
+langchain-groq 
+python-dotenv
+
+##command to install all dependencies
+# pip install -r requirements.txt
+## to update the requirements file, run:
+# pip freeze > requirements.txt             
+
+#or you can use the following command to install all dependencies without creating a requirements file.
+# pip install streamlit langchain langchain-core langchain-community langchain-groq python-dotenv
