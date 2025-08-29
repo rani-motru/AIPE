@@ -13,39 +13,39 @@ load_dotenv()
 
 
 # Add custom CSS for white background and black text
-st.markdown("""
-    <style>
-        .stApp {
-            background-color: white;
-        }
-        .stTextInput label, .stTextArea label, .stRadio label {
-            color: black !important;
-        }
-        .stRadio [role="radiogroup"] label {
-            color: black !important;
-        }
-        /* Add these specific styles for radio buttons */
-        .stRadio div[role="radiogroup"] div {
-            color: black !important;
-        }    
-        .stMarkdown {
-            color: black;
-        }
-        .stSubheader {
-            color: black;
-        }
-        div[data-baseweb="select"] span {
-            color: black;
-        }
-        /* Add these new styles for headings */
-        .stTitle {
-            color: black !important;
-        }
-        h1, h2, h3 {
-            color: black !important;
-        }
-    </style>
-""", unsafe_allow_html=True)
+# st.markdown("""
+#     <style>
+#         .stApp {
+#             background-color: white;
+#         }
+#         .stTextInput label, .stTextArea label, .stRadio label {
+#             color: black !important;
+#         }
+#         .stRadio [role="radiogroup"] label {
+#             color: black !important;
+#         }
+#         /* Add these specific styles for radio buttons */
+#         .stRadio div[role="radiogroup"] div {
+#             color: black !important;
+#         }    
+#         .stMarkdown {
+#             color: black;
+#         }
+#         .stSubheader {
+#             color: black;
+#         }
+#         div[data-baseweb="select"] span {
+#             color: black;
+#         }
+#         /* Add these new styles for headings */
+#         .stTitle {
+#             color: black !important;
+#         }
+#         h1, h2, h3 {
+#             color: black !important;
+#         }
+#     </style>
+# """, unsafe_allow_html=True)
 
 #================== custom css changes end =====================
 
@@ -235,7 +235,7 @@ if st.button("Run Analysis"):
 
             st.subheader("Analysis Response")
             st.write(response["text"])
-             # SIMPLIFIED DOWNLOAD BUTTON FOR ANALYSIS (REMOVED DUPLICATE GENERATE REPORT LOGIC)
+             
             st.download_button(
                 label="Download Analysis",
                 data=response["text"],
